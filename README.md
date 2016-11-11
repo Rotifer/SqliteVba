@@ -2,9 +2,9 @@
 
 ## VBA classes written for use in Excel to interact with SQLite
 
-I am working with Windows colleagues and need to provide a database for storage and management. 
-Decided against MS Access amd opted for SQLite for reasons that I will explain in the future.
-The plan is to use Excel as a front-end for end users with SQLite in backend.
+I am working with Windows colleagues and need to provide a database for storage and data management. 
+I decided against MS Access and opted for SQLite for reasons that I will explain in the future.
+The plan is to use Excel as a front-end for end users with SQLite in the backend.
 This is a work in progress. The classes are not yet tested or documented.
 
 
@@ -34,3 +34,5 @@ Links that I have used:
 * Windows is still popular
 * Excel will never die
 * Excel + VBA + SQLite might make a good combination, we'll see
+
+
