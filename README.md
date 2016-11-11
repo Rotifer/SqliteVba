@@ -10,7 +10,8 @@ This is a work in progress. The classes are not yet tested or documented.
 
 ## Aim to write this up in a lengthy blog entry
 
-Requires the Sqlite ODBC driver and references to the ADO and scripting runtime libraries.
+* Requires installation of SQLite exe (from the SQLite downloads page) and the Sqlite ODBC driver (http://www.ch-werner.de/sqliteodbc/).
+* In the VBA editor, add references to the ADO and scripting runtime libraries.
 
 Links that I have used:
 
@@ -27,7 +28,7 @@ Links that I have used:
 * VBA isn't very pleasant to work with but it beats PHP and Java (personal opinion)
 * Will Microsoft ever kill off VBA?
 * VBA isn't dead but it is like the undead (https://en.wikipedia.org/wiki/Undead)
-* Rubberduck takes VBA into the 21st century
+* Rubberduck takes VBA into the 21st century, see http://rubberduckvba.com/
 * Rubberduck is not working properly for me and I don't know why (Windows 10 on Mac usng Parallels Desktop)
 * SQLite is really great!
 * SQL is great!
@@ -36,3 +37,4 @@ Links that I have used:
 * Excel + VBA + SQLite might make a good combination, we'll see
 
 See *UsageNotes.md* for example code that uses the classes in this repository.
+)
