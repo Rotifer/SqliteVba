@@ -35,4 +35,4 @@ Links that I have used:
 * Excel will never die
 * Excel + VBA + SQLite might make a good combination, we'll see
 
-
+See *UsageNotes.md* for example code that uses the classes in this repository.
