@@ -29,22 +29,24 @@ Public Property Get Command() As ADODB.Command
     Set Command = m_cmd
 End Property
 
-Public Property Let sql(sqlText As String)
+Public Property Let SQL(sqlText As String)
     m_sqlText = sqlText
 End Property
-Public Function PrepareCommand(conn As ADODB.connection, sqlText As String) As Boolean
+Public Function Setup(conn As ADODB.Connection, sqlText As String) As Boolean
     Set m_cmd = New ADODB.Command
     m_cmd.ActiveConnection = conn
     m_cmd.CommandText = sqlText
-    PrepareCommand = True
+    Setup = True
 End Function
 Public Function SetStringParameter(value As String, direction As ADODB.ParameterDirectionEnum) As Boolean
     Dim param As ADODB.Parameter
+    Dim paramLen As Integer
+    paramLen = Len(value)
     Set param = m_cmd.CreateParameter
     param.Type = mappings.StringMap
     param.direction = direction
     param.value = value
-    param.Size = 100
+    param.Size = paramLen 'SQLite does not care about this but ADO requires it
     m_cmd.Parameters.Append param
     SetStringParameter = True
 End Function
