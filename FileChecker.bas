@@ -40,14 +40,14 @@ Public Function DirectoryExists(dirPath As String) As Boolean
     DirectoryExists = False
 End Function
 
-Public Function PathIsOk(dbPath As String) As Boolean
+Public Function PathIsOk(fullPath As String) As Boolean
     Dim dirnameBasenameParts() As String
     Dim dirname As String
     Dim basename As String
-    dirnameBasenameParts = GetDirnameBasenameParts(dbPath)
+    dirnameBasenameParts = GetDirnameBasenameParts(fullPath)
     dirname = dirnameBasenameParts(0)
     basename = dirnameBasenameParts(1)
-    If DirectoryExists(dbPath) Then
+    If DirectoryExists(dirname) Then
         PathIsOk = True
     Else
         PathIsOk = False
