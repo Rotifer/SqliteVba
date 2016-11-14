@@ -45,14 +45,19 @@ Public Function GetValuesForColumn(columnName As String) As Variant()
     Dim columnIndex As Integer
     Dim i As Integer
     Dim valuesForColumn() As Variant
-    If Not m_fieldsIndexColumnNamesMap.Exists(columnName) Then
-        GetValuesForColumn = valuesForColumn
-        Exit Function
-    End If
     columnIndex = GetIndexForColumnName(columnName)
     For i = 0 To UBound(m_rows, 2)
         ReDim Preserve valuesForColumn(i)
         valuesForColumn(i) = m_rows(columnIndex, i)
     Next i
     GetValuesForColumn = valuesForColumn
+End Function
+' To be used for queries with "COUNT()", "MAX()", etc as single returned value
+Public Function GetSingleValue(columnName As String) As Variant
+    Dim valueForColumn() As Variant
+    valueForColumn = GetValuesForColumn(columnName)
+    If UBound(valueForColumn) > 0 Then
+        Err.Raise 10001, "GetSingleValue", "Expecting a single value for a scalar query"
+    End If
+    GetSingleValue = valueForColumn(0)
 End Function
