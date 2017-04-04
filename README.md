@@ -21,20 +21,3 @@ Links that I have used:
 5. How to transfer data from an ADO Recordset to Excel with automation: https://support.microsoft.com/en-gb/kb/246335
 6. Good review of dictionaries: http://excelmacromastery.com/vba-dictionary/
 
-# General Notes, Whinges, Gripes, PITAs and a few Positives
-
-* Excel VBA is old and cranky
-* Microsoft ADO is old and cranky
-* VBA isn't very pleasant to work with but it beats PHP and Java (personal opinion)
-* Will Microsoft ever kill off VBA?
-* VBA isn't dead but it is like the undead (https://en.wikipedia.org/wiki/Undead)
-* Rubberduck takes VBA into the 21st century, see http://rubberduckvba.com/
-* Rubberduck is not working properly for me and I don't know why (Windows 10 on Mac usng Parallels Desktop)
-* SQLite is really great!
-* SQL is great!
-* Windows is still popular
-* Excel will never die
-* Excel + VBA + SQLite might make a good combination, we'll see
-
-See *UsageNotes.md* for example code that uses the classes in this repository.
-)
